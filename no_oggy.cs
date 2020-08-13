@@ -5,13 +5,13 @@ class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
-    foreach (var name in names.Reverse<string>())
-    {
-        if(name.StartsWith("oggy")) {
-            Console.WriteLine($"Need to remove {name}!");
-            names.Remove(name);
-        }
+    for (int i = 0; i < names.Count; i++) {
+   // if it is List<String>
+    if (names[i].StartsWith("oggy")) {
+          console.WriteLines($"Need to remove {name}!");
+         names.RemoveAt(i);   
     }
+   }
   }
   static bool OggyIsRemoved(List<string> names)
   {
