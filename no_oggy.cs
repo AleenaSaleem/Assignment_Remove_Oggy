@@ -9,7 +9,8 @@ class NoOggyChecker
    // if it is List<String>
     if (names[i].StartsWith("oggy")) {
          Console.WriteLine($"Need to remove {names[i]}!");
-         names.RemoveAt(i);   
+         names.RemoveAt(i);  
+        i--;
     }
    }
   }
